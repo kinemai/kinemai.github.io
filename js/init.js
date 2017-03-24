@@ -4,7 +4,7 @@
 /*
 -----------------------------------------------------------------------------------*/
 
-var bgLink = 'http://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887500?s=2048x2048';
+var bgLink = '../images/header.jpg';
 
 jQuery(document).ready(function($) {
 
@@ -54,12 +54,6 @@ jQuery(document).ready(function($) {
   	});
 
 
-/*----------------------------------------------------*/
-/* Backstretch Settings
------------------------------------------------------- */
-
-	$("#intro").backstretch(bgLink);
-
 
 /*----------------------------------------------------*/
 /*	Back To Top Button
@@ -99,7 +93,7 @@ jQuery(document).ready(function($) {
 /*----------------------------------------------------*/
 /* Final Countdown Settings
 ------------------------------------------------------ */
-	var finalDate = '2016/01/01';
+	var finalDate = '2018/01/01';
 
 	$('div#counter').countdown(finalDate)
    	.on('update.countdown', function(event) {
@@ -110,6 +104,13 @@ jQuery(document).ready(function($) {
    										 	 '<span>%S <em>seconds</em></span>'));
 
    });  
+
+/*----------------------------------------------------*/
+/* Backstretch Settings
+------------------------------------------------------ */
+
+	$("#intro").backstretch(bgLink);
+
 
 
 /*----------------------------------------------------*/
@@ -220,14 +221,14 @@ jQuery(document).ready(function($) {
 /* equal to the browser height.
 ------------------------------------------------------ */
 
-   $('#intro, #map').css({ 'height': $(window).height() });
-   $(window).on('resize', function() {
+//    $('#intro, #map').css({ 'height': $(window).height() });
+//    $(window).on('resize', function() {
 
-        $('#intro, #map').css({ 'height': $(window).height() });
-        $('body').css({ 'width': $(window).width() })
+//         $('#intro, #map').css({ 'height': $(window).height() });
+//         $('body').css({ 'width': $(window).width() })
 
-//        $("#intro").backstretch(bgLink);
-   });
+// //        $("#intro").backstretch(bgLink);
+//    });
 
 
 });

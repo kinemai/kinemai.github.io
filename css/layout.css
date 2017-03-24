@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
    padding-bottom: 102px;   
    min-height: 900px;
    width: 100%;
-   background: #161415 url('http://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887500?s=2048x2048') no-repeat center center;
+   background: #161415 url('../images/header.jpg') no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;   
 }
