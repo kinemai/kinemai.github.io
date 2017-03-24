@@ -4,6 +4,8 @@
 /*
 -----------------------------------------------------------------------------------*/
 
+var bgLink = 'http://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887500?s=2048x2048';
+
 jQuery(document).ready(function($) {
 
 /*---------------------------------------------------- */
@@ -56,7 +58,7 @@ jQuery(document).ready(function($) {
 /* Backstretch Settings
 ------------------------------------------------------ */
 
-	$("#intro").backstretch("images/header-background.jpg");
+	$("#intro").backstretch(bgLink);
 
 
 /*----------------------------------------------------*/
@@ -90,7 +92,7 @@ jQuery(document).ready(function($) {
 ------------------------------------------------------ */
    setTimeout( function() {
 
-	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+	   //$('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
 	   
    }, 100);
 
@@ -112,7 +114,7 @@ jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
 /*	gmaps settings
-------------------------------------------------------*/
+------------------------------------------------------
 
    var map;
 
@@ -224,7 +226,7 @@ jQuery(document).ready(function($) {
         $('#intro, #map').css({ 'height': $(window).height() });
         $('body').css({ 'width': $(window).width() })
 
-        $("#intro").backstretch("images/header-background.jpg");
+//        $("#intro").backstretch(bgLink);
    });
 
 
